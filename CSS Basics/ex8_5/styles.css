@@ -1,0 +1,91 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f6fb;
+  margin: 0;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  color: #2b6cb0;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 2px #ccc;
+}
+
+form {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  width: 450px;
+}
+
+.section {
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 2px solid #3182ce;
+  background-color: #f7f9fa;
+  border-radius: 5px;
+}
+
+legend {
+  color: #2b6cb0;
+  font-weight: bold;
+  padding: 0 8px;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.priority {
+  margin-top: 10px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.buttons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+button.send {
+  background-color: #38a169;
+}
+
+button.reset {
+  background-color: #e53e3e;
+}
+
+button:hover {
+  opacity: 0.9;
+}

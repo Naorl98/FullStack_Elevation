@@ -1,0 +1,29 @@
+
+
+body {
+
+  background-color: #858181a8;
+}
+h2 {
+  color: blue;
+} 
+  
+.h1S {
+  color: deeppink;
+}
+.h2S {
+  color: rgb(31, 142, 40);
+}
+.h3S {
+  color: rgb(117, 21, 8);
+}
+.h2Underline{
+  background-color: rgb(39, 10, 202); 
+  border: none;
+  height: 2px;
+}
+.pUnderline{
+  background-color: rgb(6, 5, 16);
+  border: none;
+  height: 2px;
+}

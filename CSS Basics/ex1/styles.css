@@ -1,0 +1,25 @@
+/* Line 1: Large, light peach, sans-serif */
+.line1 {
+    font-size: 48px;
+    color: #fce9cc;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+  }
+  
+  /* Line 2: Medium, pink, sans-serif */
+  .line2 {
+    font-size: 36px;
+    color: deeppink;
+    font-family: Verdana, sans-serif;
+    font-weight: bold;
+  }
+  
+  /* Line 3: Uppercase, blue, serif with shadow */
+  .line3 {
+    font-size: 32px;
+    color: cornflowerblue;
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  

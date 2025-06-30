@@ -1,0 +1,31 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  text-align: center;
+  background-color: #f0f0f0;
+}
+
+table {
+  margin: 0 auto;
+  width: 90%;
+  background-color: #8ef08e;
+
+}
+
+th, td {
+  padding: 10px;
+  border-bottom: 1px solid rgba(245, 236, 236, 0.591); 
+  border-right: none;
+}
+
+thead {
+  background-color: #eeeeee8f;
+}
+
+td:last-child {
+  font-weight: bold;
+}
+
+td:nth-child(2) {
+  font-weight: bold;
+}

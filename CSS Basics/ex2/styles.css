@@ -1,0 +1,8 @@
+.box {
+  background-color: peachpuff;
+  padding: 20px;
+  margin: 5px;
+  display: inline-block;
+  text-decoration: none;
+  color: blue;
+}
