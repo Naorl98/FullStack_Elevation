@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.red-background {
+  position: relative;
+  width: 220px;
+  height: 150px;
+  background-color: #d32f2f;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.silver-edges {
+  position: absolute;
+  width: 50px;
+  height: 60px;
+  background-color: lightgray;
+  top: 0;
+}
+
+#edge-1 {
+  left: 0;
+  border-top-left-radius: 4px;
+}
+
+#edge-2 {
+  right: 0;
+  border-top-right-radius: 4px;
+}
+
+.white-space {
+  position: absolute;
+  top: 0;
+  bottom: 50px;
+  left: 50px;
+  right: 50px;
+  background-color: white;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
