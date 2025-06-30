@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    text-align: center;
+  }
+  
+  .container {
+    display: flex;
+    width: 100%;
+  }
+  
+  .left {
+    background-color: pink;
+    width: calc(100% - 20px);
+    height: 100px;
+  }
+  
+  .right {
+    background-color: #d36a6a;
+    width: 20px;
+    height: 100px;
+  }
+  
