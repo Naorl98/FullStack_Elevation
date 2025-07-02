@@ -55,6 +55,15 @@ body {
     box-sizing: border-box;
   }
   
+  @media (max-width: 600px) {
+    .gallery {
+      grid-template-columns: 1fr;
+    }
+    .caption {
+      font-size: 0.8rem;
+    }
+  }
+  
   @media (max-width: 900px) {
     .gallery {
       grid-template-columns: repeat(2, 1fr);
@@ -64,12 +73,5 @@ body {
     }
   }
   
-  @media (max-width: 600px) {
-    .gallery {
-      grid-template-columns: 1fr;
-    }
-    .caption {
-      font-size: 0.8rem;
-    }
-  }
+
   
