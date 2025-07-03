@@ -91,6 +91,9 @@ body {
 
 .user-info {
   gap: 1rem;
+  display: flex;
+  align-items: center;
+
 }
 
 .user-avatar {
