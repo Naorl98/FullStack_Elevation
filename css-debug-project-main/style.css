@@ -148,7 +148,6 @@ body {
   display: flex;
   gap: 2rem;
   flex-wrap: wrap;
-  /* margin-top: 2rem; */
 
 }
 
@@ -356,22 +355,27 @@ body {
   padding: 0.75rem;
   background-color: #f8f9fa;
   border-radius: 6px;
+  
 }
 
 .member-avatar {
-  height: 36px;
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
   background-color: #3498db;
   display: flex;
   color: white;
   font-weight: bold;
   font-size: 0.9rem;
+  align-items: center;
+  justify-content: center;
 }
 
 .member-info h5 {
   color: #2c3e50;
   margin-bottom: 0.25rem;
   font-size: 0.9rem;
+  
 }
 
 .member-role {
