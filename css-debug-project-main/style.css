@@ -138,8 +138,20 @@ body {
 .dashboard-grid {
   display: flex;
   gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+
 }
 
+.left-column {
+  flex: 2;
+  min-width: 300px;
+}
+
+.right-column {
+  flex: 1;
+  min-width: 250px;
+}
 
 .widget {
   background: white;
