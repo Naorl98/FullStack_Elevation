@@ -157,6 +157,11 @@ body {
   min-width: 250px;
 }
 
+.right-column .widget {
+  max-width: 400px;
+}
+
+
 .widget {
   background: white;
   border-radius: 8px;
