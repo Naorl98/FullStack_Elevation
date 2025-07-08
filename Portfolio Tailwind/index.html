@@ -139,6 +139,7 @@
     <form id="contact-form" class="max-w-xl mx-auto bg-gray-100 p-6 rounded-lg shadow-md">
       <input type="text" name="name" placeholder="Your Name" required class="block w-full mb-4 p-3 rounded border" />
       <input type="email" name="email" placeholder="Your Email" required class="block w-full mb-4 p-3 rounded border" />
+      <input type="tel" name="phone" placeholder="Your Phone" required class="block w-full mb-4 p-3 rounded border" />
       <textarea name="message" placeholder="Your Message" rows="5" required class="block w-full mb-4 p-3 rounded border"></textarea>
       <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 transition">Send</button>
       <p id="success-msg" class="hidden text-green-600 mt-4">Message sent successfully!</p>
@@ -157,7 +158,7 @@
       emailjs.send("Portfolio", "template_Porfoli", {
         name: this.name.value,
         email: this.email.value,
-        message: "Email: " + this.email.value + "\n "  + this.message.value,
+        message: "Email: " + this.email.value + "\n " +  "Phone: " + this.phone.value + "\n "  + this.message.value,
       }).then(() => {
         document.getElementById("success-msg").classList.remove("hidden");
         this.reset();
