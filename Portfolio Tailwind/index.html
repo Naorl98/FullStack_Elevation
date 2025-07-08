@@ -8,8 +8,8 @@
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </head>
 <body class="bg-gray-50 text-gray-900 font-sans">
-  <!-- Sticky Menu Button -->
-  <button onclick="toggleMenu()" 
+<!-- Sticky Menu Button -->
+<button onclick="toggleSidebar()" 
   class="fixed top-6 right-4 z-50 flex flex-col justify-between w-7 h-5 focus:outline-none">
   <span class="block w-full h-1 bg-black"></span>
   <span class="block w-full h-1 bg-black"></span>
@@ -165,7 +165,7 @@
   <footer class="bg-gray-900 text-white py-6 text-center">
     <p>&copy; 2025 Naor Ladani. All rights reserved.</p>
   </footer>
-  '
+
   <script>
     emailjs.init("-0dXM1F-Y1slV3LHs");
     document.getElementById("contact-form").addEventListener("submit", function(event) {
@@ -186,21 +186,31 @@
   <div id="sidebar-menu" class="fixed top-0 right-0 h-full w-64 bg-white shadow-lg transform translate-x-full transition-transform duration-300 z-40">
     <div class="p-6 border-b text-xl font-bold text-blue-900">Menu</div>
     <nav class="flex flex-col p-6 space-y-4">
-      <a href="#hero" class="text-gray-800 hover:text-blue-600 font-medium">Home</a>
-      <a href="#about" class="text-gray-800 hover:text-blue-600 font-medium">About Me</a>
-      <a href="#projects" class="text-gray-800 hover:text-blue-600 font-medium">Projects</a>
-      <a href="#contact" class="text-gray-800 hover:text-blue-600 font-medium">Get in Touch</a>
+      <li><a href="#hero" class="menu-link text-blue-800 hover:text-blue-600 font-medium">Home</a></li>
+      <li><a href="#about" class="menu-link text-blue-800 hover:text-blue-600 font-medium">About Me</a></li>
+      <li><a href="#projects" class="menu-link text-blue-800 hover:text-blue-600 font-medium">Projects</a></li>
+      <li><a href="#contact" class="menu-link text-blue-800 hover:text-blue-600 font-medium">Get in Touch</a></li>
+      
     </nav>
   </div>
+
+  
   <script>
-    function toggleMenu() {
-      const menu = document.getElementById('sidebar-menu');
-      if (menu.classList.contains('translate-x-full')) {
-        menu.classList.remove('translate-x-full');
+    function toggleSidebar() {
+      const menu = document.getElementById("sidebar-menu");
+      const isOpen = !menu.classList.contains("translate-x-full");
+      if (isOpen) {
+        menu.classList.add("translate-x-full");
       } else {
-        menu.classList.add('translate-x-full');
+        menu.classList.remove("translate-x-full");
       }
     }
+      document.querySelectorAll(".menu-link").forEach(link => {
+      link.addEventListener("click", () => {
+        document.getElementById("sidebar-menu").classList.add("translate-x-full");
+      });
+    });
   </script>
+  
 </body>
 </html>
