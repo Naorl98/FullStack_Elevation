@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Naor Ladani | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans">
+  <!-- Hero Section -->
+  <section class="flex flex-col md:flex-row items-center justify-center min-h-screen px-6 py-12 bg-gradient-to-r from-blue-900 to-indigo-800 text-white">
+    <img src="images/naor-photo.jpeg" alt="Naor Profile" class="w-64 h-64 object-cover rounded-full shadow-lg mb-6 md:mb-0 md:mr-12" />
+    <div class="text-center md:text-left">
+      <h1 class="text-4xl font-bold">Naor Ladani</h1>
+      <h2 class="text-2xl font-light mt-2">Full Stack Developer</h2>
+      <p class="mt-4 max-w-xl">
+        CS Graduate. DevOps & Full Stack Certified. <br>
+        Cybersecurity Instructor at Magshimim. Passionate about tech, teamwork, and delivering smart solutions.
+      </p>
+      <div class="flex gap-4 mt-6 justify-center md:justify-start">
+        <a href="https://github.com/Naorl98" target="_blank">
+          <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" class="w-7 h-7 hover:scale-110 transition-transform" />
+        </a>
+        <a href="https://www.linkedin.com/in/naor-ladani/" target="_blank">
+          <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" class="w-7 h-7 hover:scale-110 transition-transform" />
+        </a>
+        <a href="tel:+972-55-660-8670">
+          <img src="https://cdn-icons-png.flaticon.com/512/724/724664.png" class="w-7 h-7 hover:scale-110 transition-transform" />
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About and Skills Section -->
+  <section class="grid grid-cols-1 md:grid-cols-2 gap-8 px-8 py-16 bg-white">
+    <div>
+      <h2 class="text-3xl font-bold mb-4 text-blue-900">About Me</h2>
+      <p class="leading-relaxed">
+        I'm a <strong>Computer Science graduate</strong> with a strong passion for development.<br>
+        Completed <strong>Full Stack</strong> and <strong>DevOps</strong> bootcamps.<br>
+        Currently a <strong>Cybersecurity Leader & Instructor</strong> at the "<strong>Magshimim</strong>" program.<br>
+        I love turning ideas into real, working applications.<br>
+        I'm independent, team-oriented, detail-driven and always eager to learn new technologies.
+      </p>
+    </div>
+    <div>
+      <h2 class="text-3xl font-bold mb-4 text-blue-900">Skills</h2>
+      <div class="grid grid-cols-2 gap-4 text-sm text-gray-800">
+        <div>
+          <p class="font-semibold text-lg mb-2">Languages</p>
+          <ul class="space-y-1">
+            <li>Python</li>
+            <li>Java</li>
+            <li>C#</li>
+            <li>C</li>
+            <li>HTML</li>
+            <li>CSS</li>
+          </ul>
+        </div>
+        <div class="space-y-3">
+          <div>
+            <p class="font-semibold text-lg mb-1">Frameworks</p>
+            <p class="bg-blue-100 inline-block px-3 py-1 rounded-full mr-2">FastAPI</p>
+            <p class="bg-blue-100 inline-block px-3 py-1 rounded-full">Flask</p>
+          </div>
+          <div>
+            <p class="font-semibold text-lg mb-1">DevOps</p>
+            <p class="bg-green-100 inline-block px-3 py-1 rounded-full mr-2">Docker</p>
+            <p class="bg-green-100 inline-block px-3 py-1 rounded-full mr-2">Jenkins</p>
+            <p class="bg-green-100 inline-block px-3 py-1 rounded-full">Bash</p>
+          </div>
+          <div>
+            <p class="font-semibold text-lg mb-1">Platforms</p>
+            <p class="bg-purple-100 inline-block px-3 py-1 rounded-full mr-2">Linux</p>
+            <p class="bg-purple-100 inline-block px-3 py-1 rounded-full mr-2">Ubuntu</p>
+            <p class="bg-purple-100 inline-block px-3 py-1 rounded-full">UiPath</p>
+          </div>
+          <div>
+            <p class="font-semibold text-lg mb-1">Tools</p>
+            <p class="bg-yellow-100 inline-block px-3 py-1 rounded-full mr-2">Git</p>
+            <p class="bg-yellow-100 inline-block px-3 py-1 rounded-full">VS Code</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="px-8 py-16 bg-gray-100">
+    <h2 class="text-3xl font-bold text-center mb-10 text-blue-900">Projects</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+        <img src="images/Algorithm.png" alt="Fair Allocation Algorithm" class="h-40 object-cover mx-auto mb-3 rounded" />
+        <h3 class="text-xl font-bold">Fair Allocation Algorithm</h3>
+        <p class="text-sm text-gray-600 mb-2">C++/Python algorithm for solving fair division in large-scale instances.</p>
+        <a href="https://github.com/Naorl98/FairAllocation" class="text-blue-600 font-semibold" target="_blank">View on GitHub →</a>
+      </div>
+      <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+        <img src="images/FS.png" alt="Formula Sheet Creator" class="h-40 object-cover mx-auto mb-3 rounded" />
+        <h3 class="text-xl font-bold">Formula Sheet Generator</h3>
+        <p class="text-sm text-gray-600 mb-2">Web app that converts PDF summaries into clean, structured formula sheets.</p>
+        <a href="https://github.com/Naorl98/FS-APP" class="text-blue-600 font-semibold" target="_blank">View on GitHub →</a>
+      </div>
+      <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+        <img src="images/Drone.png" alt="Drone Simulator" class="h-40 object-cover mx-auto mb-3 rounded" />
+        <h3 class="text-xl font-bold">Drone Simulator</h3>
+        <p class="text-sm text-gray-600 mb-2">Real-time drone simulation in Python using Pygame and network sockets.</p>
+        <a href="https://github.com/roni5604/Drone_Simulator_final_project" class="text-blue-600 font-semibold" target="_blank">View on GitHub →</a>
+      </div>
+      <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+        <img src="images/landingPages.png" alt="Landing Page Generator" class="h-40 object-cover mx-auto mb-3 rounded" />
+        <h3 class="text-xl font-bold">Landing Page Generator</h3>
+        <p class="text-sm text-gray-600 mb-2">Dynamic generator that builds modern personal landing pages using HTML/CSS templates.</p>
+        <a href="https://github.com/Naorl98/landing_pages" class="text-blue-600 font-semibold" target="_blank">View on GitHub →</a>
+      </div>
+      <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+        <img src="images/easystudy.png" alt="EasyStudy Platform" class="h-40 object-cover mx-auto mb-3 rounded" />
+        <h3 class="text-xl font-bold">EasyStudy Platform</h3>
+        <p class="text-sm text-gray-600 mb-2">Study assistant app combining summary creation tools and AI-powered features.</p>
+        <a href="https://github.com/Naorl98/EasyStudy" class="text-blue-600 font-semibold" target="_blank">View on GitHub →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="px-8 py-16 bg-white">
+    <h2 class="text-3xl font-bold text-center mb-10 text-blue-900">Get in Touch</h2>
+    <form id="contact-form" class="max-w-xl mx-auto bg-gray-100 p-6 rounded-lg shadow-md">
+      <input type="text" name="name" placeholder="Your Name" required class="block w-full mb-4 p-3 rounded border" />
+      <input type="email" name="email" placeholder="Your Email" required class="block w-full mb-4 p-3 rounded border" />
+      <textarea name="message" placeholder="Your Message" rows="5" required class="block w-full mb-4 p-3 rounded border"></textarea>
+      <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 transition">Send</button>
+      <p id="success-msg" class="hidden text-green-600 mt-4">Message sent successfully!</p>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-6 text-center">
+    <p>&copy; 2025 Naor Ladani. All rights reserved.</p>
+  </footer>
+
+  <script>
+    emailjs.init("-0dXM1F-Y1slV3LHs");
+    document.getElementById("contact-form").addEventListener("submit", function(event) {
+      event.preventDefault();
+      emailjs.send("Portfolio", "template_Porfoli", {
+        name: this.name.value,
+        email: this.email.value,
+        message: this.message.value
+      }).then(() => {
+        document.getElementById("success-msg").classList.remove("hidden");
+        this.reset();
+      }, (error) => {
+        alert("Error: " + error);
+      });
+    });
+  </script>
+</body>
+</html>
