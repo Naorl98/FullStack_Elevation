@@ -10,7 +10,11 @@
 <body class="bg-gray-50 text-gray-900 font-sans">
 
   <!-- Hero Section -->
-  <section class="flex flex-col md:flex-row items-center justify-center min-h-screen px-6 py-12 bg-gradient-to-r from-blue-900 to-indigo-800 text-white">
+  <section id="hero" class="flex flex-col md:flex-row items-center justify-center min-h-screen px-6 py-12 bg-gradient-to-r from-blue-900 to-indigo-800 text-white">
+   <!-- Menu Button -->
+    <button onclick="toggleMenu()" class="absolute top-6 right-6 z-50 text-white bg-white/10 p-3 rounded-md hover:bg-white/20 transition">
+      ☰
+    </button>
     <img src="images/naor-photo.jpeg" alt="Naor Profile" class="w-64 h-64 object-cover rounded-full shadow-lg mb-6 md:mb-0 md:mr-12" />
     <div class="text-center md:text-left">
       <h1 class="text-4xl font-bold">Naor Ladani</h1>
@@ -24,11 +28,19 @@
         <a href="https://www.linkedin.com/in/naor-ladani/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" class="w-7 h-7 hover:scale-110 transition-transform" /></a>
         <a href="tel:+972-55-660-8670"><img src="https://cdn-icons-png.flaticon.com/512/724/724664.png" class="w-7 h-7 hover:scale-110 transition-transform" /></a>
       </div>
+      <a href="#contact" class="mt-6 inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold px-6 py-3 rounded-full shadow-lg hover:scale-105 hover:shadow-xl transition-transform duration-300">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12H8m8 0a4 4 0 10-8 0 4 4 0 008 0z" />
+        </svg>
+        Contact Me
+      </a>
+      
+      
     </div>
   </section>
 
   <!-- About and Skills Section -->
-  <section class="grid grid-cols-1 md:grid-cols-2 gap-8 px-8 py-16 bg-white">
+  <section id="about" class="grid grid-cols-1 md:grid-cols-2 gap-8 px-8 py-16 bg-white">
     <div>
       <h2 class="text-3xl font-bold mb-4 text-blue-900">About Me</h2>
       <p class="leading-relaxed text-gray-800">
@@ -91,7 +103,7 @@
   </section>
 
   <!-- Projects Section -->
-  <section class="px-8 py-16 bg-gray-100">
+  <section id="projects" class="px-8 py-16 bg-gray-100">
     <h2 class="text-3xl font-bold text-center mb-10 text-blue-900">Projects</h2>
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
       <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition duration-300">
@@ -134,7 +146,7 @@
   </section>
 
   <!-- Contact Section -->
-  <section class="px-8 py-16 bg-white">
+  <section id="contact" class="px-8 py-16 bg-white">
     <h2 class="text-3xl font-bold text-center mb-10 text-blue-900">Get in Touch</h2>
     <form id="contact-form" class="max-w-xl mx-auto bg-gray-100 p-6 rounded-lg shadow-md">
       <input type="text" name="name" placeholder="Your Name" required class="block w-full mb-4 p-3 rounded border" />
@@ -166,6 +178,26 @@
         alert("Error: " + error);
       });
     });
+  </script>
+  <!-- Sidebar Menu -->
+  <div id="sidebar-menu" class="fixed top-0 right-0 h-full w-64 bg-white shadow-lg transform translate-x-full transition-transform duration-300 z-40">
+    <div class="p-6 border-b text-xl font-bold text-blue-900">Menu</div>
+    <nav class="flex flex-col p-6 space-y-4">
+      <a href="#hero" class="text-gray-800 hover:text-blue-600 font-medium">Home</a>
+      <a href="#about" class="text-gray-800 hover:text-blue-600 font-medium">About Me</a>
+      <a href="#projects" class="text-gray-800 hover:text-blue-600 font-medium">Projects</a>
+      <a href="#contact" class="text-gray-800 hover:text-blue-600 font-medium">Get in Touch</a>
+    </nav>
+  </div>
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('sidebar-menu');
+      if (menu.classList.contains('translate-x-full')) {
+        menu.classList.remove('translate-x-full');
+      } else {
+        menu.classList.add('translate-x-full');
+      }
+    }
   </script>
 </body>
 </html>
