@@ -1,4 +1,4 @@
-import { Office } from "./classes/Office.js";
+import { Office } from "./Office.js";
 
 const office = new Office();
 office.hireCleaner("Rina");
