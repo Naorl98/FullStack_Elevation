@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Random User Page Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Random User Page Generator</h1>
+    <button id="load-btn">Load New User</button>
+
+    <div class="profile">
+      <img id="user-img" src="" alt="User Image" />
+      <div class="profile-info">
+        <h2 id="user-name"></h2>
+        <p id="user-location"></p>
+        <div id="friends-container">
+          <button id="toggle-friends-btn">Friends</button>
+          <ul id="friends-list" class="friends-list"></ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="quote">
+      <h3>Favorite Quote</h3>
+      <p id="kanye-quote"></p>
+    </div>
+
+    <div class="pokemon">
+      <h3>Favorite Pokémon</h3>
+      <img id="pokemon-img" src="" alt="Pokemon Image" />
+      <p id="pokemon-name"></p>
+    </div>
+
+    <div class="about">
+      <h3>About Me</h3>
+      <p id="about-text"></p>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="APIManager.js"></script>
+  <script src="Renderer.js"></script>
+  <script src="UserPage.js"></script>
+  <script src="main.js" defer></script>
+</body>
+</html>
